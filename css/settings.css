@@ -1,0 +1,11 @@
+*, *::before, *::after, :root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+/*# sourceMappingURL=settings.css.map */

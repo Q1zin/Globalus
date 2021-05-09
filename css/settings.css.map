@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,EAAE,CAAC,AAAA,QAAQ,EAAE,CAAC,AAAA,OAAO,EAAE,KAAK,CAAC;EAC5B,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CAAG;;AAE3B,AAAA,IAAI,CAAC;EACH,QAAQ,EAAE,MAAM;EAChB,MAAM,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/settings.sass"
+    ],
+    "names": [],
+    "file": "settings.css"
+}

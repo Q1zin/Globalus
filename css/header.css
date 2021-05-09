@@ -1,0 +1,146 @@
+.header {
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  top: 0;
+}
+
+.header-wrap {
+  width: 1140px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header__links--a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.header__links--item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header__links--btn {
+  background: #EEF8FF;
+  border-radius: 3px;
+  padding: 8px 10px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  color: #0094FF;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.header__links--btn:hover {
+  transition: all 0.2s;
+  background-color: #DDF1FF;
+}
+
+.header__menu {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header-wrap {
+    width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-wrap {
+    width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+  }
+  .header-wrap {
+    width: 540px;
+    align-items: flex-start;
+    padding: 8px;
+    flex-wrap: wrap;
+    align-content: start;
+  }
+  .header__links {
+    display: none;
+  }
+  .header__links--btn:hover {
+    background-color: #EEF8FF;
+  }
+  .header__links--item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .header__links--active {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    flex-basis: 100%;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .header__links-main--active {
+    width: 130px;
+  }
+  .header__menu {
+    display: flex;
+    margin-top: 10px;
+    height: 18px;
+    width: 24px;
+    transition: all 0.2s;
+    position: relative;
+  }
+  .header__menu--strech {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: 1px;
+    transition: all 0.2s;
+  }
+  .header__menu--strech:nth-child(1) {
+    top: 0;
+  }
+  .header__menu--strech:nth-child(2) {
+    left: 0;
+    top: 8px;
+  }
+  .header__menu--strech:nth-child(3) {
+    top: 16px;
+  }
+  .header--active {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-wrap {
+    width: 100%;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+/*# sourceMappingURL=header.css.map */
