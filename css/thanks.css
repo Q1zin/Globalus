@@ -1,0 +1,79 @@
+.thanks {
+  width: 100%;
+  margin: 82px auto 20px auto;
+}
+
+.thanks-wrap {
+  width: 1140px;
+  padding: 25px 0 30px 0;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.thanks__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: #959EAD;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.thanks__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  color: #959EAD;
+  margin-bottom: 30px;
+}
+
+.thanks__btn {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  background: #0094FF;
+  border-radius: 4px;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .thanks-wrap {
+    width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .thanks-wrap {
+    width: 720px;
+  }
+  .thanks__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .thanks {
+    margin-top: 0;
+  }
+  .thanks-wrap {
+    width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .thanks-wrap {
+    width: 100%;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+/*# sourceMappingURL=thanks.css.map */

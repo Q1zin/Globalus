@@ -25,7 +25,6 @@
 .header__links--a {
   text-decoration: none;
   color: #000;
-  font-family: 'Exo 2', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -40,7 +39,6 @@
   background: #EEF8FF;
   border-radius: 3px;
   padding: 8px 10px;
-  font-family: 'Exo 2', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
