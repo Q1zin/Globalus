@@ -3,6 +3,8 @@
   position: fixed;
   height: 60px;
   top: 0;
+  background-color: #fff;
+  transition: all 0.2s;
 }
 
 .header-wrap {

@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/settings.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/thanks.css">
 </head>
 
@@ -25,7 +26,7 @@
     </div>
   </section>
 
-  <!-- Сдесь будет footer -->
+  <?php include "footer.php"; ?>
 
   <script src="js/script.js"></script>
 </body>

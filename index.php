@@ -11,11 +11,14 @@
   <link rel="stylesheet" href="css/settings.css">
   <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
 
 </head>
 
 <body>
   <?php include "header.php"; ?>
+
+  <?php include "footer.php"; ?>
 
   <script src="js/swiper.js"></script>
   <script src="js/script.js"></script>
