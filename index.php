@@ -12,11 +12,14 @@
   <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/popular-destinations.css">
 
 </head>
 
 <body>
   <?php include "header.php"; ?>
+
+  <?php include "popular-destinations.php"; ?>
 
   <?php include "footer.php"; ?>
 

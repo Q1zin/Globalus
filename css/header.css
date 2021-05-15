@@ -5,6 +5,7 @@
   top: 0;
   background-color: #fff;
   transition: all 0.2s;
+  z-index: 1000;
 }
 
 .header-wrap {
