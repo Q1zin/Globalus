@@ -11,17 +11,20 @@
   <link rel="stylesheet" href="css/settings.css">
   <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/conditions.css">
   <link rel="stylesheet" href="css/popular-destinations.css">
+  <link rel="stylesheet" href="css/footer.css">
 
 </head>
 
 <body>
-  <?php include "header.php"; ?>
 
-  <?php include "popular-destinations.php"; ?>
-
-  <?php include "footer.php"; ?>
+  <?php
+  include "header.php";
+  include "conditions.php";
+  include "popular-destinations.php";
+  include "footer.php";
+  ?>
 
   <script src="js/swiper.js"></script>
   <script src="js/script.js"></script>
