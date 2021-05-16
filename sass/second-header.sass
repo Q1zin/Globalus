@@ -1,0 +1,137 @@
+.second-header
+  margin-bottom: 26px
+  margin-top: 60px
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+  bottom: 6px
+
+.swiper-pagination-bullet
+  height: 14px
+  width: 14px
+  margin: 0 5px
+  background: #ffffff
+  opacity: 1
+
+.swiper-pagination-bullet-active
+  background: #59B9FF
+.info
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 70%
+  &__title
+    font-style: normal
+    font-weight: normal
+    font-size: 40px
+    line-height: 60px
+    color: #FFFFFF
+    margin-top: 0
+    margin-bottom: 18px
+    text-align: center
+  &__text
+    font-size: 19px
+    line-height: 23px
+    text-align: center
+    color: #FFFFFF
+    margin: 0
+    text-align: center
+
+.swiper-container
+  width: 100%
+  height: auto
+  max-height: calc(100vh - 60px)
+
+.swiper-slide
+  &__img
+    width: 100%
+    max-height: calc(100vh - 60px)
+
+.swiper-button
+  &-next
+    right: 20px
+    &::after
+      content: ''
+  &-prev
+    left: 20px
+    &::after
+      content: ''
+
+@media (max-width: 1460px)
+  .info
+    &__title
+      font-size: 30px
+      line-height: 41px
+      margin-bottom: 21px
+    &__text
+      font-size: 16px
+      line-height: 22px
+
+@media (max-width: 1200px)
+  .info
+    &__title
+      font-size: 30px
+      line-height: 41px
+      margin-bottom: 21px
+    &__text
+      font-size: 16px
+      line-height: 22px
+  .second-header
+    margin-bottom: 0
+
+@media (max-width: 992px)
+  .info
+    &__title
+      font-size: 30px
+      line-height: 41px
+      margin-bottom: 21px
+    &__text
+      font-size: 16px
+      line-height: 22px
+  .swiper-button__img
+    width: 40px
+    height: 40px
+
+@media (max-width: 768px)
+  .swiper-pagination-bullet
+    height: 12px
+    width: 12px
+    margin: 0 3px
+  .second-header
+    margin-top: 0
+  .info
+    &__title
+      font-size: 24px
+      line-height: 33px
+      margin-bottom: 18px
+    &__text
+      font-size: 14px
+      line-height: 19px
+  .swiper-button__img
+    width: 30px
+    height: 30px
+  .swiper-button-next
+    right: 12px
+  .swiper-button-prev
+    left: 12px
+
+@media (max-width: 576px)
+  .swiper-pagination-bullet
+    height: 8px
+    width: 8px
+    margin: 0 3px
+  .info
+    &__title
+      font-size: 16px
+      line-height: 17px
+      margin-bottom: 8px
+    &__text
+      font-size: 10px
+      line-height: 17px
+  .swiper-button__img
+    width: 20px
+    height: 20px
+  .swiper-button-next
+    right: 6px
+  .swiper-button-prev
+    left: 6px

@@ -7,7 +7,7 @@
         <div class="card-wrap">
           <h3 class="card__title">Египет</h3>
           <p class="card__text">Это очень популярное место для туризма, ведь там очень много мест, которые можно посетить с семьёй</p>
-          <button class="card__btn">Хочу сюда</button>
+          <button class="card__btn">Выбрать</button>
         </div>
       </div>
       <div class="popular-destinations__card card">
@@ -15,7 +15,7 @@
         <div class="card-wrap">
           <h3 class="card__title">Турция</h3>
           <p class="card__text">Это место любят русские туристы, потому что там очень много экскурсий, а ещё чистое, красивое море</p>
-          <button class="card__btn">Хочу сюда</button>
+          <button class="card__btn">Выбрать</button>
         </div>
       </div>
       <div class="popular-destinations__card card">
@@ -23,7 +23,7 @@
         <div class="card-wrap">
           <h3 class="card__title">Болгария</h3>
           <p class="card__text">Место стало популярно благодаря новым, современным курортам, известных на весь мир, и выходу к морю</p>
-          <button class="card__btn">Хочу сюда</button>
+          <button class="card__btn">Выбрать</button>
         </div>
       </div>
     </div>

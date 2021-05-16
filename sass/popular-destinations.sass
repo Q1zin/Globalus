@@ -1,11 +1,14 @@
 .popular-destinations
-  // УБРАТЬ ПОЗЖЕ
   margin-top: 0
-  padding: 12px 0 0 20px
+  padding: 12px 0 20px 0
   display: flex
   flex-direction: column
   align-items: center
   justify-content: center
+  // margin-bottom: 200px
+  position: relative
+  // z-index: 100
+  background-color: #fff
   &-wrap
     display: flex
     flex-direction: column
@@ -79,7 +82,10 @@
     border-radius: 3px
     padding: 10px 16px
     cursor: pointer
-
+    transition: all 0.2s
+    &:hover
+      transition: all 0.2s
+      background-color: #DDF1FF
 @media (max-width: 1200px)
   .popular-destinations
     &-wrap
@@ -146,6 +152,9 @@
       font-size: 12px
       line-height: 81.5%
       padding: 10px 12px
+      &:hover
+        transition: all 0.2s
+        background-color: #EEF8FF
     &-wrap
       padding: 6px 8px 10px 8px
 

@@ -4,7 +4,7 @@
   height: 60px;
   top: 0;
   background-color: #fff;
-  transition: all 0.2s;
+  transition: all 0.06s;
   z-index: 1000;
 }
 
@@ -49,11 +49,11 @@
   color: #0094FF;
   border: none;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.06s;
 }
 
 .header__links--btn:hover {
-  transition: all 0.2s;
+  transition: all 0.06s;
   background-color: #DDF1FF;
 }
 
@@ -110,7 +110,7 @@
     margin-top: 10px;
     height: 18px;
     width: 24px;
-    transition: all 0.2s;
+    transition: all 0.06s;
     position: relative;
   }
   .header__menu--strech {
@@ -120,7 +120,7 @@
     height: 2px;
     background-color: #000000;
     border-radius: 1px;
-    transition: all 0.2s;
+    transition: all 0.06s;
   }
   .header__menu--strech:nth-child(1) {
     top: 0;

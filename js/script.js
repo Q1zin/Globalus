@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       strech[1].style.top = 8 + "px";
       strech[2].style.top = 16 + "px";
       btnMenu = 0;
-    }, 200)
+    }, 150)
   }
 
   function openMenu() {
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       strech[2].style.transform = "rotate(-45deg)";
       strech[2].style.transformOrigin = "center";
       btnMenu = 1;
-    }, 200);
+    }, 150);
   }
 
   document.querySelector(".header__menu").addEventListener("click", function (e) {
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         <div class="card-wrap">
           <h3 class="card__title">Гавайи</h3>
           <p class="card__text">Место стало популярно благодаря новым, современным курортам, известных на весь мир, и выходу к морю</p>
-          <button class="card__btn">Хочу сюда</button>
+          <button class="card__btn">Выбрать</button>
         </div>
       </div>
     `;
@@ -75,11 +75,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
         <div class="card-wrap">
           <h3 class="card__title">Крым</h3>
           <p class="card__text">Место стало популярно благодаря новым, современным курортам, известных на весь мир, и выходу к морю</p>
-          <button class="card__btn">Хочу сюда</button>
+          <button class="card__btn">Выбрать</button>
         </div>
       </div>
     `;
   })
 
+  // Слайдер 
+
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    keyboard: true,
+  });
 
 });

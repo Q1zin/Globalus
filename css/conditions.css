@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   padding: 12px 0 30px 0;
-  margin-top: 60px;
 }
 
 .conditions-wrap {
@@ -110,9 +109,6 @@
 }
 
 @media (max-width: 768px) {
-  .conditions {
-    margin-top: 20px;
-  }
   .conditions__title {
     font-size: 30px;
     line-height: 40px;
@@ -146,9 +142,6 @@
 }
 
 @media (max-width: 576px) {
-  .conditions {
-    margin-top: 20px;
-  }
   .conditions__content {
     justify-content: center;
     align-items: center;
@@ -156,8 +149,8 @@
     width: 100%;
   }
   .conditions__title {
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 20px;
+    line-height: 28px;
     margin-bottom: 13px;
   }
   .conditions-block {
