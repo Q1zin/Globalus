@@ -1,6 +1,6 @@
 .second-header {
-  margin-bottom: 26px;
   margin-top: 60px;
+  background-color: #fff;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
@@ -95,9 +95,6 @@
   .info__text {
     font-size: 16px;
     line-height: 22px;
-  }
-  .second-header {
-    margin-bottom: 0;
   }
 }
 

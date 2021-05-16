@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
 
 <head>
   <meta charset="UTF-8">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/second-header.css">
   <link rel="stylesheet" href="css/conditions.css">
   <link rel="stylesheet" href="css/popular-destinations.css">
+  <link rel="stylesheet" href="css/select-tour-form.css">
   <link rel="stylesheet" href="css/footer.css">
 
 </head>
@@ -26,6 +27,7 @@
   include "second-header.php";
   include "conditions.php";
   include "popular-destinations.php";
+  include "select-tour-form.php";
   include "footer.php";
   ?>
 

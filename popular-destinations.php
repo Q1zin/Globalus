@@ -1,4 +1,4 @@
-<div class="popular-destinations">
+<div class="popular-destinations" id="popular-destinations">
   <div class="popular-destinations-wrap">
     <h2 class="popular-destinations__title">Популярные направления</h2>
     <div class="popular-destinations__content">

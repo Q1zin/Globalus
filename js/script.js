@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.querySelector(".header").classList.remove("header--active");
     document.querySelector(".header__links-main").classList.remove("header__links-main--active");
     document.querySelector(".header__links").classList.remove("header__links--active");
+    document.querySelector(".html").style.overflowY = "auto";
     strech[1].style.width = 24 + "px";
     strech[0].style.transform = "rotate(0deg)";
     strech[2].style.transform = "rotate(0deg)";
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     strech[2].style.top = 8 + "px";
     strech[1].style.width = 0;
     strech[1].style.left = 50 + "%";
+    document.querySelector(".html").style.overflowY = "hidden";
     setTimeout(function () {
       strech[0].style.transform = "rotate(45deg)";
       strech[0].style.transformOrigin = "center";

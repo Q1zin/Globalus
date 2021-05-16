@@ -37,6 +37,12 @@
   border-radius: 3px;
   cursor: pointer;
   border: none;
+  transition: all 0.2s;
+}
+
+.popular-destinations__btn-more:hover {
+  transition: all 0.2s;
+  background-color: #125BFB;
 }
 
 .popular-destinations__content {
@@ -171,6 +177,10 @@
     font-size: 14px;
     line-height: 19px;
     padding: 6px 18px;
+  }
+  .popular-destinations__btn-more:hover {
+    transition: all 0.2s;
+    background-color: #417DFF;
   }
   .card {
     width: 166px;

@@ -1,4 +1,4 @@
-<div class="conditions">
+<div class="conditions" id="conditions">
   <div class="conditions-wrap">
     <h2 class="conditions__title">Наши Условия</h2>
     <div class="conditions__content">

@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: center;
   padding: 12px 0 30px 0;
+  background-color: #fff;
+  padding-top: 20px;
 }
 
 .conditions-wrap {
@@ -109,6 +111,9 @@
 }
 
 @media (max-width: 768px) {
+  .conditions {
+    padding-top: 16px;
+  }
   .conditions__title {
     font-size: 30px;
     line-height: 40px;
