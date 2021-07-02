@@ -1,9 +1,8 @@
 .header
   width: 100%
-  position: fixed
+  position: relative
   height: 60px
-  top: 0
-  background-color: #eaeaea
+  background-color: #ffffff
   transition: all 0.06s
   z-index: 1000
   &-wrap
@@ -24,7 +23,7 @@
       color: #000
       font-style: normal
       font-weight: 500
-      font-size: 13px
+      font-size: 14px
       line-height: 17px
     &--item
       &:not(:last-child)
@@ -35,12 +34,14 @@
       padding: 8px 10px
       font-style: normal
       font-weight: 500
-      font-size: 13px
+      font-size: 14px
       line-height: 17px
       color: #0094FF
       border: none
       cursor: pointer
       transition: all 0.06s
+      display: block
+      text-decoration: none
       &:hover
         transition: all 0.06s
         background-color: #DDF1FF
@@ -60,6 +61,7 @@
 @media (max-width: 768px)
   .header
     position: relative
+    background-color: #fff
     &-wrap
       width: 540px
       align-items: flex-start

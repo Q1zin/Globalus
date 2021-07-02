@@ -1,61 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 
-  // Работа с меню
-
-  var btnMenu = 0;
-  var strech = document.getElementsByClassName("header__menu--strech");
-
-  function closeMenu() {
-    document.querySelector(".header").classList.remove("header--active");
-    document.querySelector(".header__links-main").classList.remove("header__links-main--active");
-    document.querySelector(".header__links").classList.remove("header__links--active");
-    document.querySelector(".html").style.overflowY = "auto";
-    strech[1].style.width = 24 + "px";
-    strech[0].style.transform = "rotate(0deg)";
-    strech[2].style.transform = "rotate(0deg)";
-    strech[1].style.left = 0 + "px";
-    setTimeout(function () {
-      strech[0].style.top = 0 + "px";
-      strech[1].style.top = 8 + "px";
-      strech[2].style.top = 16 + "px";
-      btnMenu = 0;
-    }, 150)
-  }
-
-  function openMenu() {
-    document.querySelector(".header").classList.add("header--active");
-    document.querySelector(".header__links-main").classList.add("header__links-main--active");
-    document.querySelector(".header__links").classList.add("header__links--active");
-    strech[0].style.top = 8 + "px";
-    strech[2].style.top = 8 + "px";
-    strech[1].style.width = 0;
-    strech[1].style.left = 50 + "%";
-    document.querySelector(".html").style.overflowY = "hidden";
-    setTimeout(function () {
-      strech[0].style.transform = "rotate(45deg)";
-      strech[0].style.transformOrigin = "center";
-      strech[2].style.transform = "rotate(-45deg)";
-      strech[2].style.transformOrigin = "center";
-      btnMenu = 1;
-    }, 150);
-  }
-
-  document.querySelector(".header__menu").addEventListener("click", function (e) {
-    e.preventDefault();
-
-    if (btnMenu) {
-      closeMenu();
-    } else {
-      openMenu();
-    }
-  })
-
-  document.querySelector(".header__links").addEventListener("click", function (e) {
-    if (e.target.children.length == 0) {
-      closeMenu();
-    }
-  })
-
   // Работа с добавлением контента (ПЕРЕДЕЛАТЬ)
 
   document.querySelector(".popular-destinations__btn-more").addEventListener("click", function () {
@@ -65,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         <img src="img/Hawaii.webp" alt="img: фото с Гавай" class="card__img">
         <div class="card-wrap">
           <h3 class="card__title">Гавайи</h3>
-          <p class="card__text">Место стало популярно благодаря новым, современным курортам, известных на весь мир, и выходу к морю</p>
+          <p class="card__text">Место стало популярно, благодаря новым курортам, которые известны на весь мир</p>
           <button class="card__btn">Выбрать</button>
         </div>
       </div>
@@ -76,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         <img src="img/crimea.jpg" alt="img: фото из Крыма" class="card__img">
         <div class="card-wrap">
           <h3 class="card__title">Крым</h3>
-          <p class="card__text">Место стало популярно благодаря новым, современным курортам, известных на весь мир, и выходу к морю</p>
+          <p class="card__text">Место стало популярно, благодаря новым курортам, которые известны на весь мир</p>
           <button class="card__btn">Выбрать</button>
         </div>
       </div>
@@ -97,5 +41,94 @@ document.addEventListener("DOMContentLoaded", function (event) {
     },
     keyboard: true,
   });
+
+  AOS.init();
+
+  document.querySelector(".popular-destinations__content").addEventListener("click", function (event) {
+    if (event.target.classList.value == "card__btn") {
+      let county = event.path[1].children[0].innerText;
+      document.querySelector(".form__textarea").value = `Я выбираю тур "${county}". Расскажите о нём поподробнее.`;
+      let href = "index.php#select-tour-form";
+      window.location.href = href;
+    }
+  })
+
+  $('.form__input-tel').mask('+7 (000) 000 00-00');
+
+  document.querySelector(".form__btn").onclick = function (event) {
+    let name = document.querySelector(".form__input-name").value,
+      nameErrCorrect = 0,
+      nameErrLangth,
+      lastName = document.querySelector(".form__input-last-name").value,
+      lastNameErrCorrect = 0,
+      lastNameErrLangth,
+      tel = document.querySelector(".form__input-tel").value,
+      telErrLangth,
+      text = document.querySelector(".form__textarea").value,
+      textErrLenght;
+
+    var patternName = /^[A-Za-zА-Яа-я]+$/;
+
+
+    // Валидация имени
+    for (let i = 0; i < name.length; i++) {
+      if (!patternName.test(name[i])) {
+        nameErrCorrect++;
+      }
+    }
+
+    if (name.length < 3 || name.length > 32) {
+      nameErrLangth = true;
+      document.querySelector(".err-name").innerHTML = "Имя должно быть не менее 3 и не более 32 символов";
+    } else if (nameErrCorrect > 0) {
+      nameErrCorrect = true;
+      document.querySelector(".err-name").innerHTML = "Введите корректное имя";
+    } else {
+      document.querySelector(".err-name").innerHTML = "";
+    }
+
+
+    // Валидация фамилии
+    for (let i = 0; i < lastName.length; i++) {
+      if (!patternName.test(lastName[i])) {
+        lastNameErrCorrect++;
+      }
+    }
+
+    if (lastName.length < 4 || lastName.length > 32) {
+      lastNameErrLangth = true;
+      document.querySelector(".err-last-name").innerHTML = "Фамилия должна быть не менее 4 и не более 32 символов";
+    } else if (lastNameErrCorrect > 0) {
+      lastNameErrCorrect = true;
+      document.querySelector(".err-last-name").innerHTML = "Введите корректную фамилию";
+    } else {
+      document.querySelector(".err-last-name").innerHTML = "";
+    }
+
+    // Валидация телефона
+    if (tel.length != 18) {
+      telErrLangth = true;
+      document.querySelector(".err-tel").innerHTML = "Введите корректный телефон";
+    } else {
+      document.querySelector(".err-tel").innerHTML = "";
+    }
+
+    // Валидация текста
+    if (text.length == 0) {
+      textErrLenght = true;
+      document.querySelector(".err-form__textarea").innerHTML = "Введите пожелания";
+    } else {
+      document.querySelector(".err-form__textarea").innerHTML = "";
+    }
+
+    if (!textErrLenght && !telErrLangth && !lastNameErrCorrect && !lastNameErrLangth && !nameErrCorrect && !nameErrLangth) {
+      // тут должен быть ajax запрос к бд)))
+
+      window.location.href = 'thanks.php';
+    }
+
+  };
+
+
 
 });

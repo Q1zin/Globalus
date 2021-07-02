@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html" style="scroll-behavior: smooth;">
 
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,7 @@
   <title>Globalus - Страница благодарности</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="css/settings.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -28,7 +29,7 @@
 
   <?php include "footer.php"; ?>
 
-  <script src="js/script.js"></script>
+  <script src="js/script-menu.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,122 @@
+.about-us {
+  margin-top: 0;
+  padding: 20px 40px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fff;
+}
+
+.about-us-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us__title {
+  margin-bottom: 16px;
+  margin-top: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.about-us__content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-us__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  text-align: justify;
+}
+
+.about-us__requisites {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  text-align: start;
+}
+
+.about-us__telephone {
+  margin-top: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.about-us__telephone--link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 26px;
+  display: flex;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .about-us__title {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .about-us__text {
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 12px;
+  }
+  .about-us__requisites {
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 12px;
+  }
+  .about-us__telephone {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .about-us__telephone--link {
+    font-size: 17px;
+    line-height: 23px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-us__title {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .about-us__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-us__requisites {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-us__telephone {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-us__telephone--link {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 5px;
+  }
+}
+/*# sourceMappingURL=about-us.css.map */

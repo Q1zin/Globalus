@@ -1,5 +1,4 @@
 .second-header {
-  margin-top: 60px;
   background-color: #fff;
 }
 
@@ -30,8 +29,8 @@
 .info__title {
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 74px;
+  line-height: 88px;
   color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 18px;
@@ -39,8 +38,8 @@
 }
 
 .info__text {
-  font-size: 19px;
-  line-height: 23px;
+  font-size: 24px;
+  line-height: 28px;
   text-align: center;
   color: #FFFFFF;
   margin: 0;
@@ -76,36 +75,36 @@
 
 @media (max-width: 1460px) {
   .info__title {
-    font-size: 30px;
-    line-height: 41px;
+    font-size: 60px;
+    line-height: 64px;
     margin-bottom: 21px;
   }
   .info__text {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
 @media (max-width: 1200px) {
   .info__title {
-    font-size: 30px;
-    line-height: 41px;
+    font-size: 51px;
+    line-height: 50px;
     margin-bottom: 21px;
   }
   .info__text {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (max-width: 992px) {
   .info__title {
-    font-size: 30px;
-    line-height: 41px;
+    font-size: 39px;
+    line-height: 38px;
     margin-bottom: 21px;
   }
   .info__text {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
   }
   .swiper-button__img {
@@ -124,12 +123,12 @@
     margin-top: 0;
   }
   .info__title {
-    font-size: 24px;
+    font-size: 29px;
     line-height: 33px;
     margin-bottom: 18px;
   }
   .info__text {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 19px;
   }
   .swiper-button__img {
@@ -151,13 +150,13 @@
     margin: 0 3px;
   }
   .info__title {
-    font-size: 16px;
-    line-height: 17px;
+    font-size: 21px;
+    line-height: 24px;
     margin-bottom: 8px;
   }
   .info__text {
     font-size: 10px;
-    line-height: 17px;
+    line-height: 11px;
   }
   .swiper-button__img {
     width: 20px;
@@ -168,6 +167,13 @@
   }
   .swiper-button-prev {
     left: 6px;
+  }
+}
+
+@media (max-width: 420px) {
+  .info__title {
+    font-size: 16px;
+    line-height: 17px;
   }
 }
 /*# sourceMappingURL=second-header.css.map */

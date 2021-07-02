@@ -25,7 +25,7 @@
 .contacts__title {
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
   margin-bottom: 18px;
@@ -45,7 +45,7 @@
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
 }
@@ -58,7 +58,7 @@
 .help__title {
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
   margin-bottom: 18px;
@@ -72,7 +72,7 @@
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
 }
@@ -84,7 +84,7 @@
 .company__title {
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
   margin-bottom: 18px;
@@ -98,7 +98,7 @@
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
 }
@@ -132,10 +132,10 @@
     width: 540px;
   }
   .footer__link--main-page {
-    margin-right: 40px;
+    margin-right: 33px;
   }
   .footer__link--main-page-img {
-    width: 82px;
+    width: 78px;
   }
   .contacts {
     margin-right: 40px;
@@ -148,9 +148,12 @@
   .contacts__item {
     margin-bottom: 8px;
   }
-  .contacts__item--link {
-    font-size: 10px;
+  .contacts__item--text {
+    font-size: 12px;
     line-height: 14px;
+  }
+  .contacts__item--img {
+    width: 19px;
   }
   .help {
     margin-right: 40px;
@@ -164,7 +167,7 @@
     margin-bottom: 8px;
   }
   .help__item--link {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 14px;
   }
   .company {
@@ -179,7 +182,7 @@
     margin-bottom: 8px;
   }
   .company__item--link {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 14px;
   }
 }
@@ -191,7 +194,7 @@
     padding: 16px 0 12px 13px;
   }
   .footer__link--main-page {
-    margin: 0 47px 26px 0;
+    margin: 0 62px 26px 0;
   }
   .footer__link--main-page__img {
     width: 75px;
@@ -201,6 +204,48 @@
   }
   .help {
     margin-right: 70px;
+  }
+  .contacts__title {
+    font-size: 17px;
+    line-height: 19px;
+    margin-bottom: 12px;
+  }
+  .contacts__item {
+    margin-bottom: 8px;
+  }
+  .contacts__item--text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .contacts__item--img {
+    width: 19px;
+  }
+  .help {
+    margin-right: 54px;
+  }
+  .help__title {
+    font-size: 17px;
+    line-height: 19px;
+    margin-bottom: 12px;
+  }
+  .help__item {
+    margin-bottom: 8px;
+  }
+  .help__item--link {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .company__title {
+    font-size: 17px;
+    line-height: 19px;
+    margin-bottom: 12px;
+  }
+  .company__item {
+    margin-bottom: 8px;
+  }
+  .company__item--link {
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 /*# sourceMappingURL=footer.css.map */
